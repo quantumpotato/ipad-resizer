@@ -1,0 +1,7 @@
+Instead of CGPointMake(x,y) and CGRectMake(x,y,width,height), use
+ipmakepoint(x,y) 								//iPad make point
+ipmakerect(x,y,width,height)  	//iPad make rect
+
+To resize the point or frame to fit an iPhone or iPad screen.
+
+Make sure not to call this on an already resized value, eg ipmmakerect on a view's frame then resizing that view's frame with ipmakerect(view.frame.origin.x..)
